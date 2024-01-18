@@ -1,0 +1,105 @@
+.App {
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+  margin: 20px;
+}
+
+h1 {
+  color: #333;
+}
+
+h2 {
+  color: #444;
+}
+
+div {
+  margin-bottom: 20px;
+}
+
+div.create-emission {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  animation: fun1 1.25s ease-in-out;
+}
+
+input {
+  margin-bottom: 10px;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+button {
+  padding: 8px 12px;
+  margin: 5px;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  background-color: blue;
+  color: #fff;
+}
+
+button:hover {
+  background-color: #06189e;
+  transform: scale(1.1);
+  transition: all 0.5s ease-in-out;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin: 10px 0;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  border: 1px solid black; 
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #4caf50;
+  color: #fff;
+}
+
+/* Style for Update Popup with larger size and animation duration */
+.update-popup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 30px; /* Updated padding for a larger popup */
+  background-color: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Increased box shadow */
+  animation: fadeIn 1s ease-in-out; /* Updated animation duration */
+}
+
+/* Updated fade-in animation for the Create New Emission form */
+@keyframes fun1 {
+  0% {
+    opacity: 0;
+    transform: translateY(-10vh); /* Optional: Add a slight upward movement */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
